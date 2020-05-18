@@ -4,7 +4,7 @@ body {
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
-
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100vh
@@ -31,4 +31,8 @@ header a {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+}
+
+.thumb-img {
+    max-width: 10rem;
 }

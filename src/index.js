@@ -20,7 +20,7 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'This is NodeJs with hbs engine template',
+        title: 'Road to fullstack developer',
         name: 'Your name'
     })
 })
