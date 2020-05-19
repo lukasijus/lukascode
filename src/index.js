@@ -3,7 +3,7 @@ const hbs = require('hbs')
 const express = require('express')
 const app = express()
 const port = process.env.PORT
-
+const name = 'lukas code'
 // Define paths for templates
 const publicDirectoryPath = path.join(__dirname, '../public')
 const vuewsPath = path.join(__dirname, '../templates/views')
@@ -20,15 +20,22 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'Road to fullstack developer',
-        name: 'Your name'
+        title: 'How to Full-stack developer',
+        name: name
     })
 })
 
 app.get('/about', (req,res) => {
     res.render('about', {
         title: 'About',
-        name: 'Your name'
+        name: name
+    })
+})
+
+app.get('/modernjs', (req,res) => {
+    res.render('modernjs', {
+        title: 'Modern Javascript 2020',
+        name: name
     })
 })
 
